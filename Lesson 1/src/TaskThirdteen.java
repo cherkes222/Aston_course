@@ -1,13 +1,40 @@
+import java.util.Scanner;
 public class TaskThirdteen {
-    protected static void createMatrix() {
-        int[][] arr = new int[3][3];
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0, x = arr[i].length - 1; j < arr[i].length; j++, x--) {
-                if (i == j || i == x) arr[i][j] = 1;
-                else arr[i][j] = 0;
-                System.out.print(arr[i][j] + " ");
+    static int n = 5;
+    static int m = n;
+
+    static int[][] a = new int[n][m];
+
+    protected static void matrix() {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                a[i][j] = 0;
             }
-            System.out.print("\n");
         }
+        for (int i = a.length - 1; i >= 0; i--) {
+            for (int j = 0; j < m; j++) {
+                if (i == j) {
+                    a[i][j] = 1;
+                }
+            }
+        }
+
+        for (int i = a.length - 1; i >= 0; i--) {
+            for (int j = 0; j < m; j++) {
+                if (i == j) {
+                    a[i][a.length-j-1] = 1;
+                }
+            }
+        }
+
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
     }
 }

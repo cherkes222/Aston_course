@@ -1,6 +1,8 @@
 public class TaskEleven {
-   /* protected static void arrayHundred(int n){
-        int[] arr = new int[n];
+
+    private static int[] arr = new int[100];
+    protected static void arrayHundred(){
+
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
         }
@@ -14,5 +16,5 @@ public class TaskEleven {
 
     }
 
-    */
+
 }
