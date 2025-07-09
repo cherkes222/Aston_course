@@ -1,12 +1,11 @@
 package org.example;
 
 public class Park {
-    private String name;  // Название парка
-    private String address;  // Адрес парка
-    private Attraction[] attractions;  // Массив аттракционов
-    private int attractionCount;  // Количество аттракционов в парке
+    private String name;
+    private String address;
+    private Attraction[] attractions;
+    private int attractionCount;
 
-    // Конструктор класса Park
     public Park(String name, String address, int maxAttractions) {
         this.name = name;
         this.address = address;
@@ -14,7 +13,6 @@ public class Park {
         this.attractionCount = 0;
     }
 
-    // Метод для добавления аттракциона в парк
     public void addAttraction(String name, String workingHours, double price) {
         if (attractionCount < attractions.length) {
             attractions[attractionCount++] = new Attraction(name, workingHours, price);
@@ -23,7 +21,6 @@ public class Park {
         }
     }
 
-    // Метод для вывода информации о парке и его аттракционах
     public void printParkInfo() {
         System.out.println("Парк: " + name);
         System.out.println("Адрес: " + address);
@@ -33,20 +30,17 @@ public class Park {
         }
     }
 
-    // Внутренний класс Attraction
     private class Attraction {
-        private String name;  // Название аттракциона
-        private String workingHours;  // Время работы аттракциона
-        private double price;  // Стоимость аттракциона
+        private String name;
+        private String workingHours;
+        private double price;
 
-        // Конструктор для аттракциона
         public Attraction(String name, String workingHours, double price) {
             this.name = name;
             this.workingHours = workingHours;
             this.price = price;
         }
 
-        // Метод для вывода информации о аттракционе
         public void printAttractionInfo() {
             System.out.println("Название: " + name);
             System.out.println("Время работы: " + workingHours);

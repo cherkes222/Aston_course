@@ -3,15 +3,15 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Product {
-    // Поля класса
-    private String name; // Название товара
-    private LocalDate productionDate; // Дата производства
-    private String manufacturer; // Производитель
-    private String countryOfOrigin; // Страна происхождения
-    private double price; // Цена товара
-    private boolean isBooked; // Состояние бронирования (покупателем)
 
-    // Конструктор класса
+    private String name;
+    private LocalDate productionDate;
+    private String manufacturer;
+    private String countryOfOrigin;
+    private double price;
+    private boolean isBooked;
+
+
     public Product(String name, String productionDate, String manufacturer, String countryOfOrigin, double price, boolean isBooked) {
         this.name = name;
         this.productionDate = LocalDate.parse(productionDate, DateTimeFormatter.ofPattern("dd.MM.yyyy"));
@@ -21,7 +21,7 @@ public class Product {
         this.isBooked = isBooked;
     }
 
-    // Метод для вывода информации о товаре
+
     public void printInfo() {
         System.out.println("Название товара: " + name);
         System.out.println("Дата производства: " + productionDate);
