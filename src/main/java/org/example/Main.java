@@ -22,7 +22,6 @@ public class Main {
 
         Park myPark = new Park("Диснейленд", "Волшебная улица, 1", 3);
 
-        // Добавляем аттракционы
         myPark.addAttraction("Американские горки", "10:00 - 22:00", 500);
         myPark.addAttraction("Колесо обозрения", "11:00 - 20:00", 350);
         myPark.addAttraction("Поездка на лодке", "09:00 - 18:00", 200);

@@ -24,7 +24,8 @@ public class Park {
     public void printParkInfo() {
         System.out.println("Парк: " + name);
         System.out.println("Адрес: " + address);
-        System.out.println("Список аттракционов:");
+        System.out.println("Список аттракционов: " + attractionCount);
+        System.out.println(" ");
         for (int i = 0; i < attractionCount; i++) {
             attractions[i].printAttractionInfo();
         }
