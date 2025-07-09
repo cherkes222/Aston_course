@@ -1,17 +1,32 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Задание 1,2");
+        System.out.println("--------------------");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Product[] productsArray = new Product[5];
+
+        productsArray[0] = new Product("Samsung S25 Ultra", "01.02.2025", "Samsung Corp.", "Korea", 5599, true);
+        productsArray[1] = new Product("iPhone 15 Pro Max", "12.09.2025", "Apple", "USA", 1200, false);
+        productsArray[2] = new Product("Sony WH-1000XM5", "10.10.2024", "Sony", "Japan", 350, true);
+        productsArray[3] = new Product("MacBook Pro 14", "20.08.2023", "Apple", "USA", 2200, false);
+        productsArray[4] = new Product("LG OLED TV", "05.06.2022", "LG", "South Korea", 1500, true);
+
+        for (Product product : productsArray) {
+            product.printInfo();
         }
+
+        System.out.println("Задание 3");
+        System.out.println("--------------------");
+
+        Park myPark = new Park("Диснейленд", "Волшебная улица, 1", 3);
+
+        // Добавляем аттракционы
+        myPark.addAttraction("Американские горки", "10:00 - 22:00", 500);
+        myPark.addAttraction("Колесо обозрения", "11:00 - 20:00", 350);
+        myPark.addAttraction("Поездка на лодке", "09:00 - 18:00", 200);
+
+        myPark.printParkInfo();
     }
 }
