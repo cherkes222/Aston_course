@@ -5,9 +5,9 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         Lesson1.printThreeWords();
-        Lesson1.checkSumSign(-2, -4);
-        Lesson1.printColor(0);
-        Lesson1.compareNumbers(2, 3);
+        Lesson1.checkSumSign();
+        Lesson1.printColor();
+        Lesson1.compareNumbers();
         System.out.println(Lesson1.checkNumber(10, 2));
         Lesson1.positiveNumber(0);
         System.out.println(Lesson1.checkPositiveNumber(0));

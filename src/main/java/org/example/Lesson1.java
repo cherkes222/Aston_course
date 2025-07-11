@@ -9,9 +9,10 @@ public class Lesson1 {
     }
 
 
-    public static void checkSumSign(int a, int b){
-        int c = a + b;
-        if (c > 0){
+    public static void checkSumSign(){
+        int a = -2;
+        int b = -4;
+        if (a + b > 0){
             System.out.println("Число положительное.");
         }
         else {
@@ -19,7 +20,8 @@ public class Lesson1 {
         }
     }
 
-    public static void printColor(int value){
+    public static void printColor(){
+        int value = 0;
         if (value <= 0) {
             System.out.println("Красный");
         }
@@ -32,7 +34,9 @@ public class Lesson1 {
     }
 
 
-    public static void compareNumbers(int a, int b){
+    public static void compareNumbers(){
+        int a = 2;
+        int b = 3;
         if (a > b){
             System.out.println("a > b");
         }
@@ -43,8 +47,8 @@ public class Lesson1 {
 
 
     public static boolean checkNumber(int a, int b) {
-        int sum = a + b;
-        return sum >= 10 && sum <= 20;
+
+        return a + b >= 10 && a + b <= 20;
     }
 
 
