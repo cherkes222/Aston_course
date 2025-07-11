@@ -47,7 +47,6 @@ public class Lesson1 {
 
 
     public static boolean checkNumber(int a, int b) {
-
         return a + b >= 10 && a + b <= 20;
     }
 
