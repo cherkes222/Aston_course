@@ -37,7 +37,7 @@ public class Cat extends Animal {
             isFull = true;
             System.out.println(name + " поел");
         } else {
-            System.out.println(name + " не поел. Недостаточно еды");
+            System.out.println(name + " не поел. Не хватает еды в миске");
         }
     }
 }
